@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int *p,a[10],n,i;    //*p is an interger value
+	cout<<"enter size of an array:";
+	cin>>n;
+	cout<<"enter elements of an array:"<<endl;
+	for(i = 0;i<n;i++){
+		
+		cin>>a[i];    //taking input of array elements to the screen
+		
+	}
+  //assigning array to a pointer(array itself is a address value)
+    p = a ;
+    //printing eleements in an array
+    cout<<"the elements in an array  are:";
+    for(i = 0;i<n;i++){
+    	cout<<*p<<endl;
+    	p++;          //pointer moves to next position
+    	
+	}
+return 0;	
+}
